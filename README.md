@@ -2,8 +2,9 @@
 
 Have fun! 🎉
 
-1. Use this repo as a [template](https://github.ibm.com/cloud-labs/skeleton/generate)
+1. Use this repo as a [template](https://github.ibm.com/cloud-labs/skeleton/generate) for your lab preparation (with terraform!) and instructions (with docsify!).
 1. Enable `Pages` in your repo, pointing to the `main` branch and the `docs` folder.
+1. Eventually move this repo from GitHub Enterprise to GitHub public.
 
 ## 📂 Directory structure
 
@@ -22,9 +23,17 @@ Have fun! 🎉
 
 ## 🚀 Deploy through Schematics
 
-1. Copy `template.local.env` to `local.env`
+You can choose to run terraform locally of course. Or you can decide to do it with Schematics so that the state is in the Cloud.
+
+1. Copy `template.local.env` to `local.env`:
+   ```sh
+   cp template.local.env local.env
+   ```
 1. Configure `local.env`
-1. Source `local.env`
+1. Load the environment variables:
+   ```sh
+   source local.env
+   ```
 1. Run `./create-workspace.sh` to create a Schematics workspace to deploy your resources.
 1. Go to https://cloud.ibm.com/schematics/workspaces, select the workspace.
 1. Under **Settings**, set variables.
