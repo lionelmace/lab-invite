@@ -3,4 +3,4 @@
 *.tfvars*
 local.env
 DO-NOT-COMMIT-create-workspace.json
-
+credentials*.csv

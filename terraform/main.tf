@@ -13,7 +13,7 @@ module "lab_idp" {
   region            = var.region
   resource_group_id = module.lab_base.resource_group_id
 
-  user_count        = 30
-  user_prefix       = "sklab"
+  user_count        = var.user_count
+  user_prefix       = var.user_prefix
   tags              = var.tags
 }

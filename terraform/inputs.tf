@@ -13,3 +13,11 @@ variable "title" {
 variable "tags" {
   default = [ "skeleton-1234", "terraform" ]
 }
+
+variable "user_count" {
+  default = 30
+}
+
+variable "user_prefix" {
+  default = "sklab"
+}
