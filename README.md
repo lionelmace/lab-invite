@@ -34,7 +34,7 @@ You can choose to run terraform locally of course. Or you can decide to do it wi
    ```sh
    source local.env
    ```
-1. Run `./create-workspace.sh` to create a Schematics workspace to deploy your resources.
+1. Run `./create-or-update-workspace.sh` to create a Schematics workspace to deploy your resources.
 1. Go to https://cloud.ibm.com/schematics/workspaces, select the workspace.
 1. Under **Settings**, set variables.
 1. Click **Apply plan**.
