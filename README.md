@@ -38,3 +38,5 @@ You can choose to run terraform locally of course. Or you can decide to do it wi
 1. Go to https://cloud.ibm.com/schematics/workspaces, select the workspace.
 1. Under **Settings**, set variables.
 1. Click **Apply plan**.
+1. Use `./get-credentials.sh` to retrieve the `credentials.csv` file.
+
