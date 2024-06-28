@@ -16,4 +16,6 @@ module "lab_idp" {
   user_count        = var.user_count
   user_prefix       = var.user_prefix
   tags              = var.tags
+  # uncomment the following if you do not want to use a trusted profile
+  # cloud_user_strategy = "STATIC"
 }
