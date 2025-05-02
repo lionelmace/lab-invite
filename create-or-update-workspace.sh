@@ -26,7 +26,7 @@ echo "
 " > DO-NOT-COMMIT-create-workspace.json
 
 ibmcloud login --apikey $IBMCLOUD_API_KEY
-ibmcloud target -g $RESOURCE_GROUP
+ibmcloud target -g $RESOURCE_GROUP -r $REGION
 
 WORKSPACE_ID=$(ibmcloud schematics workspace list --output json | jq -r '.workspaces[] | select(.name=="'"$WORKSPACE_NAME"'") | .id' 2>/dev/null)
 echo "Workspace ID is $WORKSPACE_ID"
