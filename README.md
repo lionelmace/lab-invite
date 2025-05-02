@@ -24,6 +24,12 @@ Have fun! 🎉
 
 ## 💻 Deploy locally
 
+1. To retrieve the shared terraform modules, create a `.netrc` file under your home directory with the following content:
+   ```sh
+   machine github.ibm.com
+   login <your-github-enterprise-username>
+   password <a-personal-github-enterprise-token-with-read-permissions>
+   ```
 1. Copy `template.local.env` to `local.env`:
    ```sh
    cp template.local.env local.env
@@ -32,10 +38,6 @@ Have fun! 🎉
 1. Load environment:
    ```sh
    source local.env
-   ```
-1. Ensure you have the latest dependencies:
-   ```sh
-   git submodule update --recursive --remote
    ```
 1. Apply:
    ```sh
