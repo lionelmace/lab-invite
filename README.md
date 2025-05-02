@@ -22,6 +22,28 @@ Have fun! 🎉
    python -m http.server --directory docs --bind 0.0.0.0 8080
    ```
 
+## 💻 Deploy locally
+
+1. Copy `template.local.env` to `local.env`:
+   ```sh
+   cp template.local.env local.env
+   ```
+1. Configure `local.env`
+1. Load environment:
+   ```sh
+   source local.env
+   ```
+1. Ensure you have the latest dependencies:
+   ```sh
+   git submodule update --recursive --remote
+   ```
+1. Apply:
+   ```sh
+   cd terraform
+   terraform init
+   terraform apply
+   ```
+
 ## 🚀 Deploy through Schematics
 
 You can choose to run terraform locally of course. Or you can decide to do it with Schematics so that the state is in the Cloud.

@@ -1,0 +1,4 @@
+[submodule "terraform/modules/reusable"]
+	path = terraform/modules/reusable
+	url = ../reusable.git
+	branch = main
