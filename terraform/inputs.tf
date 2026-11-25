@@ -1,23 +1,23 @@
 variable "region" {
-  default = "us-south"
+  default = "eu-de"
 }
 
 variable "basename" {
-  default = "skeleton-1234"
+  default = "rovs-lab"
 }
 
 variable "title" {
-  default = "Lab Title"
+  default = "ROVS Lab"
 }
 
 variable "tags" {
-  default = [ "skeleton-1234", "terraform" ]
+  default = [ "rovs", "lab", "terraform" ]
 }
 
 variable "user_count" {
-  default = 30
+  default = 45
 }
 
 variable "user_prefix" {
-  default = "sklab"
+  default = "rovsuser"
 }

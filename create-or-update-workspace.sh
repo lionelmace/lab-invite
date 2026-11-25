@@ -6,7 +6,7 @@ echo "
     \"region\": \"$REGION\"
   },
   \"type\": [
-    \"terraform_v1.5\"
+    \"terraform_v1.14\"
   ],
   \"template_repo\": {
     \"url\": \"$GITHUB_URL\"
@@ -14,7 +14,7 @@ echo "
   \"template_data\": [
     {
       \"folder\": \"terraform\",
-      \"type\": \"terraform_v1.5\",
+      \"type\": \"terraform_v1.14\",
       \"env_values\": [
         {
           \"__netrc__\":\"[['github.ibm.com','token','$GITHUB_TOKEN']]\"

@@ -6,7 +6,8 @@ module "lab_base" {
 }
 
 module "lab_idp" {
-  source = "git::https://github.ibm.com/cloud-labs/reusable.git//terraform/modules/idp"
+  # source = "git::https://github.ibm.com/cloud-labs/reusable.git//terraform/modules/idp"
+  source = "./modules/idp"
 
   basename          = var.basename
   title             = var.title
