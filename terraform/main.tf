@@ -1,5 +1,6 @@
 module "lab_base" {
-  source = "git::https://github.ibm.com/cloud-labs/reusable.git//terraform/modules/base"
+  # source = "git::https://github.ibm.com/cloud-labs/reusable.git//terraform/modules/base"
+  source = "./modules/base"
 
   basename = var.basename
   tags     = var.tags
